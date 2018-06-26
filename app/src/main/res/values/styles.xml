@@ -6,6 +6,37 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- 设置所有activity跳转动画 -->
+        <item name="android:windowAnimationStyle">@style/translucent_style</item>
     </style>
 
+    <style name="translucent_style" parent="@android:style/Animation">
+        <!--  启动时的进入和移出  -->
+        <item name="android:activityOpenEnterAnimation">@anim/start_activity_translatex_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/start_activity_translatex_out</item>
+        <!--  finish时的进入和移出  -->
+        <item name="android:activityCloseEnterAnimation">@anim/finish_activity_translatex_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/finish_activity_translatex_out</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="animator_select_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#50333333</item>
+    </style>
 </resources>

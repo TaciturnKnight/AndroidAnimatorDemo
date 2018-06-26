@@ -13,4 +13,9 @@
         android:layout_height="wrap_content"
         android:text="simple" />
 
+    <Button
+        android:id="@+id/explode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="explode" />
 </LinearLayout>

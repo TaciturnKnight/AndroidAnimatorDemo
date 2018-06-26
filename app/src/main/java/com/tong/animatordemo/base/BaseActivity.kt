@@ -12,12 +12,14 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mContext = this@BaseActivity
+        preSetContentView()
         setContentView(getLayout())
         initView()
         initListener()
         initData()
     }
 
+    abstract fun preSetContentView()
     abstract fun initView()
     abstract fun initListener()
     abstract fun initData()
