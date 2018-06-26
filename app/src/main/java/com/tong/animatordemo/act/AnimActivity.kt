@@ -11,7 +11,7 @@ import com.tong.animatordemo.base.BaseActivity
  */
 class AnimActivity : BaseActivity() {
     lateinit var simple: Button
-
+    //测试提交
     override fun initView() {
         simple = findViewById(R.id.simple)
     }
