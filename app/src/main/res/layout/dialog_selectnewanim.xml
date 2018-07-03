@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/select_explode"
+        style="@style/animator_select_text_style"
+        android:text="Explode"
+        android:transitionName="newanim" />
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/select_slide"
+        style="@style/animator_select_text_style"
+        android:text="Slide" />
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/select_fade"
+        style="@style/animator_select_text_style"
+        android:text="Fade" />
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/select_share"
+        style="@style/animator_select_text_style"
+        android:text="Share" />
+
+    <View style="@style/line_style" />
+</LinearLayout>

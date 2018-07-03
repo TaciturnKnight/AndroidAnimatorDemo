@@ -11,11 +11,11 @@
         android:id="@+id/simple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="simple" />
+        android:text="基本操作" />
 
     <Button
-        android:id="@+id/explode"
+        android:id="@+id/new_anim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="explode" />
+        android:text="转场效果" />
 </LinearLayout>

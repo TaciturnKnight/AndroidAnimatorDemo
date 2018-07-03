@@ -13,5 +13,8 @@ class AnimatorConstants {
         val FADE: String = "fade"
         val ROTE: String = "rote"
         val GROUP: String = "group"
+        val EXPLODE: String = "explode"
+        val SLIDE: String = "slide"
+        val SHARE: String = "share"
     }
 }

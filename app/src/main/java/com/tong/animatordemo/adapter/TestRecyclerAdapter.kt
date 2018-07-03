@@ -2,6 +2,7 @@ package com.tong.animatordemo.adapter
 
 import android.content.Context
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import com.tong.animatordemo.R
 import com.tong.animatordemo.base.OnItemClickListener
@@ -22,14 +23,20 @@ class TestRecyclerAdapter(mContext: Context, itemListener: OnItemClickListener) 
     }
 
     inner class Holder(view: View, listener: OnItemClickListener) : RecyclerHolder<ItemBean>(view, listener) {
-        lateinit var textview: TextView
+        lateinit var title: TextView
+        lateinit var desc: TextView
+        lateinit var pic: ImageView
 
         init {
-            textview = view.findViewById(R.id.radio)
+            title = view.findViewById(R.id.item_title)
+            desc = view.findViewById(R.id.item_desc)
+            pic = view.findViewById(R.id.item_pic)
         }
 
         override fun setData(data: ItemBean, position: Int) {
-            textview.setText(data.name)
+            title.setText(data.title)
+            desc.setText(data.desc)
+            pic.setImageResource(R.mipmap.ic_launcher)
         }
 
     }
